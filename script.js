@@ -1,11 +1,13 @@
-const controls = document.querySelectorAll(".control");
+const controls = document.querySelectorAll(".products-control");
+const imageControls = document.querySelectorAll(".images-control");
 let currentItem = 0;
-const items = document.querySelectorAll(".item");
+const items = document.querySelectorAll(".productItem");
+const imageItems = document.querySelectorAll(".imageItem");
 const maxItems = items.length;
 
 controls.forEach((control) => {
   control.addEventListener("click", (e) => {
-    let isLeft = e.target.classList.contains("left");
+    let isLeft = e.target.classList.contains("left-product");
 
     if (isLeft) {
       currentItem -= 1;
@@ -21,7 +23,7 @@ controls.forEach((control) => {
       currentItem = maxItems - 1;
     }
 
-    items.forEach((item) => item.classList.remove("neon"));
+    items.forEach((item) => item.classList.remove("neon-product"));
 
     items[currentItem].scrollIntoView({
       behavior: "smooth",
@@ -29,9 +31,41 @@ controls.forEach((control) => {
       block: "center"
     });
 
-    items[currentItem].classList.add("neon");
+    items[currentItem].classList.add("neon-product");
   });
 });
+
+
+imageControls.forEach((image) => {
+  image.addEventListener("click", (e) => {
+    let isLeft = e.target.classList.contains("left-image");
+
+    if (isLeft) {
+      currentItem -= 1;
+    } else {
+      currentItem += 1;
+    }
+
+    if (currentItem >= maxItems) {
+      currentItem = 0;
+    }
+
+    if (currentItem < 0) {
+      currentItem = maxItems - 1;
+    }
+
+    imageItems.forEach((item) => item.classList.remove("neon-image"));
+
+    imageItems[currentItem].scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "center"
+    });
+
+    imageItems[currentItem].classList.add("neon-image");
+  });
+});
+
 
 
 window.addEventListener('load', function () {

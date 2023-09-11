@@ -179,7 +179,7 @@ li {
     scrollbar-width: none;
 }
 
-.neon {
+.neon-product, .neon-image {
     opacity: 1;
 }
 
