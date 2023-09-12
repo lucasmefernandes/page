@@ -10,10 +10,11 @@ body{
 
 .slider{
     margin: 0 auto;
-    width: 800px;
+    width: 400px;
     height: 400px;
     overflow: hidden;
     border: solid black ;
+
 }
 
 .slides{
@@ -34,7 +35,7 @@ body{
 }
 
 .slide img{
-    width: 800px;
+    width: 400px;
 }
 
 .manual-navigation{
