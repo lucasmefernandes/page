@@ -21,17 +21,17 @@ nav {
     justify-content: center;
 }
 
-ul {
+nav ul {
     width: 582px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-li {
+nav li {
     margin: 0 16px;
     list-style: none;
-    color: #fff;
+    color: #000000;
     cursor: pointer;
 }
 
@@ -138,6 +138,8 @@ li {
     font-size: 24px;
     margin-top: 16px;
 }
+
+
 
 .box-caroussel {
     display: flex;
