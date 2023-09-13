@@ -385,3 +385,25 @@ form button:hover {
     color: #00ac00;
     border: 0.1px solid #00ac00;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social p {
+    font-size: 12px;
+}
