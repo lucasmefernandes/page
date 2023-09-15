@@ -292,7 +292,7 @@ nav li {
 .box-img-left .box-text-sobre {
     padding-left: 34px;
     text-transform: uppercase;
-    text-align: left;
+    text-align: justify;
     color: #042e4d;
 }
 
@@ -303,7 +303,7 @@ nav li {
 .box-img-right .box-text-sobre {
     padding-right: 34px;
     text-transform: uppercase;
-    text-align: right;
+    text-align: justify;
     color: #042e4d;
 }
 
