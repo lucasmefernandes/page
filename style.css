@@ -11,7 +11,7 @@ a {
 }
 
 main {
-    background-color: rgba(4, 46, 77);
+    background: rgb(0, 129, 209);
 }
 
 nav {
@@ -65,7 +65,7 @@ nav li {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #074973;
+    background-color: rgb(0, 129, 209);
     transition: width 0.5s ease-in-out;
 }
 
@@ -87,8 +87,8 @@ nav li {
     position: absolute;
     width: 100%;
     height: 800px;
-    background-color: rgba(4, 46, 77, 0.25);
-    background-image: linear-gradient(0deg, rgb(4, 46, 77) 20%, rgba(4, 46, 77, 0) 70%, rgba(4, 46, 77, 0) 100%, rgba(4, 46, 77, 0.6) 100%);
+    background: linear-gradient(to bottom right, rgb(0, 129, 209), rgb(54, 183, 250));
+    background-image: linear-gradient(0deg, rgb(0, 129, 209) 20%, rgba(0, 129, 209, 0) 40%, rgba(0, 129, 209, 0) 100%, rgba(0, 129, 209, 0.6) 100%);
 }
 
 .header-invisible {
@@ -113,8 +113,7 @@ nav li {
     margin-top: 82px;
 }
 
-.container-global-sec01,
-.container-global-sec02 {
+.container-global-sec01 {
     width: 1166px;
 }
 
@@ -181,7 +180,8 @@ nav li {
     scrollbar-width: none;
 }
 
-.neon-product, .neon-image {
+.neon-product,
+.neon-image {
     opacity: 1;
 }
 
@@ -263,56 +263,65 @@ nav li {
 }
 
 .sec-02 {
-    background: #fff;
+    background: #005587;
+    flex-direction: column;
+}
+
+.cropped {
+    width: 937px;
+    height: 236px;
+    overflow: hidden;
+
+}
+
+.cropped img {
+    object-fit: cover;
+    object-position: -69px -325px;
 }
 
 .container-global-sec02 .box-title {
-    margin: 84px 0;
-    color: #042e4d;
+    width: 1164px;
+    position: relative;
+    text-shadow: 2px 2px 20px #000000;
+    margin: 84px auto;
+    line-height: 24px;
+    color: #fff;
 }
 
-.box-img-left,
-.box-img-right {
-    width: 1166px;
+.box-img {
     display: flex;
     align-items: flex-start;
 }
 
-.box-img-right {
-    margin: 84px 0;
+.container-global-sec02 {
+    height: 800px;
 }
 
-.box-img-left img,
-.box-img-right img {
-    width: 450px;
-    border-radius: 5px;
-    box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -4px rgba(255, 255, 255, 0.1);
+.img-sobre::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    right: 0px;
+    background-image: url(assets/imgs/img-main/sobrenos2.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
 }
 
-.box-img-left .box-text-sobre {
-    padding-left: 34px;
-    text-transform: uppercase;
+.box-text-sobre {
+    text-shadow: 2px 2px 20px #000000;
+    margin: 0 auto;
+    width: 1164px;
+    position: relative;
     text-align: justify;
-    color: #042e4d;
+    color: #fff;
 }
 
-.box-img-left .box-text-sobre p {
-    margin-top: 16px;
-}
 
-.box-img-right .box-text-sobre {
-    padding-right: 34px;
-    text-transform: uppercase;
-    text-align: justify;
-    color: #042e4d;
-}
-
-.box-img-right .box-text-sobre p {
-    margin-bottom: 16px;
-}
 
 .sec-03 {
-    background: #0083d2;
+    background: linear-gradient(to bottom right, #0083d2, #36b7fa);
     position: relative;
     display: flex;
     align-items: center;
@@ -355,9 +364,9 @@ textarea#message {
     border-radius: 5px;
     font-size: 16px;
     background-color: #f5f5f5;
-    color: #333; 
-    resize: none; 
-    min-height: 100px; 
+    color: #333;
+    resize: none;
+    min-height: 100px;
 }
 
 input[type="text"] {
@@ -369,7 +378,7 @@ input[type="text"] {
     font-size: 16px;
 }
 
-form button {
+.button-wpp {
     width: 100%;
     background-color: #00ac00;
     color: #fff;
@@ -380,7 +389,7 @@ form button {
     cursor: pointer;
 }
 
-form button:hover {
+.button-wpp:hover {
     background-color: #fff;
     color: #00ac00;
     border: 0.1px solid #00ac00;
