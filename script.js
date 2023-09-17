@@ -1,13 +1,11 @@
-const controls = document.querySelectorAll(".products-control");
-const imageControls = document.querySelectorAll(".images-control");
+const controls = document.querySelectorAll(".control");
 let currentItem = 0;
-const items = document.querySelectorAll(".productItem");
-const imageItems = document.querySelectorAll(".imageItem");
+const items = document.querySelectorAll(".item");
 const maxItems = items.length;
 
 controls.forEach((control) => {
   control.addEventListener("click", (e) => {
-    let isLeft = e.target.classList.contains("left-product");
+    let isLeft = e.target.classList.contains("left");
 
     if (isLeft) {
       currentItem -= 1;
@@ -23,78 +21,49 @@ controls.forEach((control) => {
       currentItem = maxItems - 1;
     }
 
-    items.forEach((item) => item.classList.remove("neon-product"));
+    items.forEach((item) => item.classList.remove("neon"));
 
     items[currentItem].scrollIntoView({
       behavior: "smooth",
       inline: "center",
-      block: "center"
+      block: "center",
     });
 
-    items[currentItem].classList.add("neon-product");
+    items[currentItem].classList.add("neon");
   });
 });
 
+window.addEventListener("load", function () {
+  const nav = document.querySelector("nav");
+  let lastScrollY = window.scrollY;
 
-// imageControls.forEach((image) => {
-//   image.addEventListener("click", (e) => {
-//     let isLeft = e.target.classList.contains("left-image");
+  window.addEventListener("scroll", function () {
+    const currentScrollY = window.scrollY;
 
-//     if (isLeft) {
-//       currentItem -= 1;
-//     } else {
-//       currentItem += 1;
-//     }
+    // Defina o ponto de rolagem onde você deseja ocultar o 'nav'
+    const scrollThreshold = 600; // Altere este valor conforme necessário
 
-//     if (currentItem >= maxItems) {
-//       currentItem = 0;
-//     }
+    if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold) {
+      nav.style.display = "none"; // Oculta o 'nav'
+    } else {
+      nav.style.display = "flex"; // Mostra o 'nav'
+    }
 
-//     if (currentItem < 0) {
-//       currentItem = maxItems - 1;
-//     }
-
-//     imageItems.forEach((item) => item.classList.remove("neon-image"));
-
-//     imageItems[currentItem].scrollIntoView({
-//       behavior: "smooth",
-//       inline: "center",
-//       block: "center"
-//     });
-
-//     imageItems[currentItem].classList.add("neon-image");
-//   });
-// });
-
-
-
-window.addEventListener('load', function () {
-    const nav = document.querySelector('nav');
-    let lastScrollY = window.scrollY;
-
-    window.addEventListener('scroll', function () {
-        const currentScrollY = window.scrollY;
-
-        // Defina o ponto de rolagem onde você deseja ocultar o 'nav'
-        const scrollThreshold = 600; // Altere este valor conforme necessário
-
-        if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold) {
-            nav.style.display = 'none'; // Oculta o 'nav'
-        } else {
-            nav.style.display = 'flex'; // Mostra o 'nav'
-        }
-
-        lastScrollY = currentScrollY;
-    });
+    lastScrollY = currentScrollY;
+  });
 });
 
-document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+document
+  .getElementById("whatsappForm")
+  .addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const name = encodeURIComponent(document.getElementById('name').value);
-    const message = encodeURIComponent(document.getElementById('message').value);
+    const name = encodeURIComponent(document.getElementById("name").value);
+    const message = encodeURIComponent(
+      document.getElementById("message").value
+    );
 
     const whatsappLink = `https://api.whatsapp.com/send?phone=+551637216351&text=Olá,%20${name}!%20${message}`;
 
-    window.open(whatsappLink, '_blank');
-});
+    window.open(whatsappLink, "_blank");
+  });
