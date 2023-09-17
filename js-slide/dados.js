@@ -18,6 +18,27 @@ const dadosSliders = [
       "assets/imgs/imgs-slides/rolete5.png"
     ],
     nome: "Slider 2"
+  },
+  {
+    imagens: [
+      "assets/imgs/imgs-slides/rolete1.png",
+      "assets/imgs/imgs-slides/rolete2.png",
+      "assets/imgs/imgs-slides/rolete3.png",
+      "assets/imgs/imgs-slides/rolete4.png",
+      "assets/imgs/imgs-slides/rolete5.png"
+    ],
+    nome: "Slider 2"
+  }
+  ,
+  {
+    imagens: [
+      "assets/imgs/imgs-slides/rolete1.png",
+      "assets/imgs/imgs-slides/rolete2.png",
+      "assets/imgs/imgs-slides/rolete3.png",
+      "assets/imgs/imgs-slides/rolete4.png",
+      "assets/imgs/imgs-slides/rolete5.png"
+    ],
+    nome: "Slider 2"
   }
 ];
 
