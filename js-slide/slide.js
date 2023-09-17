@@ -3,10 +3,14 @@ import dadosSliders from "./dados.js";
 const dadosObtidos = dadosSliders;
 
 const contPrincipal = document.querySelector(".slider-main");
+const cards = document.querySelector(".cards");
 
 dadosObtidos.forEach((dadosSlider, index) => {
   const slider = document.createElement("div");
   slider.classList.add("slider");
+  slider.classList.add("card-item");
+  slider.classList.add("item");
+  slider.classList.add("neon");
 
   const manual = document.createElement("div");
   manual.classList.add("manual-navigation");
@@ -65,7 +69,7 @@ dadosObtidos.forEach((dadosSlider, index) => {
 
   slider.appendChild(carga);
   slider.appendChild(wpp);
-  contPrincipal.appendChild(slider);
+  cards.appendChild(slider);
 
 
   function updateImage() {
@@ -81,10 +85,10 @@ dadosObtidos.forEach((dadosSlider, index) => {
   let loadBar = slider.querySelector(".load");
   let loadBars = [loadBar];
 
-  loadBars.forEach(load => load.style.display = "none");
+  loadBars.forEach(load => load.style.visibility = "hidden");
 
-  slider.addEventListener("mouseover", () => {
-    loadBars.forEach(load => load.style.display = "block");
+  slides.addEventListener("mouseover", () => {
+    loadBars.forEach(load => load.style.visibility = "visible");
     loadBars.forEach(load => {
       load.style.animation = "none";
       void load.offsetWidth;
@@ -95,8 +99,8 @@ dadosObtidos.forEach((dadosSlider, index) => {
     }, 1600);
   });
 
-  slider.addEventListener("mouseout", () => {
-    loadBars.forEach(load => load.style.display = "none");
+  slides.addEventListener("mouseout", () => {
+    loadBars.forEach(load => load.style.visibility = "hidden");
     clearInterval(interval);
   });
 

@@ -138,8 +138,6 @@ nav li {
     margin-top: 16px;
 }
 
-
-
 .box-caroussel {
     display: flex;
     align-items: center;
@@ -158,7 +156,7 @@ nav li {
 }
 
 .card-item {
-    width: 300px;
+    max-width: 400px;
     background-color: #fff;
     border-radius: 10px;
     padding: 16px;
@@ -182,17 +180,6 @@ nav li {
 
 .neon {
     opacity: 1;
-}
-
-.card-item img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.card-item p {
-    font-size: 15px;
-    text-align: justify;
-    margin: 32px 0;
 }
 
 .button-caroussel {
@@ -391,7 +378,7 @@ input[type="text"] {
 .button-wpp:hover {
     background-color: #fff;
     color: #00ac00;
-    border: 0.1px solid #00ac00;
+    outline: 0.1px solid #00ac00;
 }
 
 footer {
