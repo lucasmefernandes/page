@@ -180,8 +180,7 @@ nav li {
     scrollbar-width: none;
 }
 
-.neon-product,
-.neon-image {
+.neon {
     opacity: 1;
 }
 
