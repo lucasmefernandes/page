@@ -36,35 +36,35 @@ controls.forEach((control) => {
 });
 
 
-imageControls.forEach((image) => {
-  image.addEventListener("click", (e) => {
-    let isLeft = e.target.classList.contains("left-image");
+// imageControls.forEach((image) => {
+//   image.addEventListener("click", (e) => {
+//     let isLeft = e.target.classList.contains("left-image");
 
-    if (isLeft) {
-      currentItem -= 1;
-    } else {
-      currentItem += 1;
-    }
+//     if (isLeft) {
+//       currentItem -= 1;
+//     } else {
+//       currentItem += 1;
+//     }
 
-    if (currentItem >= maxItems) {
-      currentItem = 0;
-    }
+//     if (currentItem >= maxItems) {
+//       currentItem = 0;
+//     }
 
-    if (currentItem < 0) {
-      currentItem = maxItems - 1;
-    }
+//     if (currentItem < 0) {
+//       currentItem = maxItems - 1;
+//     }
 
-    imageItems.forEach((item) => item.classList.remove("neon-image"));
+//     imageItems.forEach((item) => item.classList.remove("neon-image"));
 
-    imageItems[currentItem].scrollIntoView({
-      behavior: "smooth",
-      inline: "center",
-      block: "center"
-    });
+//     imageItems[currentItem].scrollIntoView({
+//       behavior: "smooth",
+//       inline: "center",
+//       block: "center"
+//     });
 
-    imageItems[currentItem].classList.add("neon-image");
-  });
-});
+//     imageItems[currentItem].classList.add("neon-image");
+//   });
+// });
 
 
 

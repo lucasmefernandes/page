@@ -8,7 +8,8 @@
     width: 400px;
     overflow: hidden;
     box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
-    border-radius: 5px;   
+    border-radius: 5px;
+    margin-right: 1rem;
 }
 
 .slider .button-wpp {
@@ -27,7 +28,7 @@
     display: none;
 }
 
-.slide{
+.slide {
     width: 25%;
     position: relative;
     transition: 0.6s;
@@ -57,27 +58,27 @@
     margin-right: 20px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
     background-color: black;
 }
 
-#radio1:checked ~ .first {
+#radio1:checked~.first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first {
+#radio2:checked~.first {
     margin-left: -25%;
 }
 
-#radio3:checked ~ .first {
+#radio3:checked~.first {
     margin-left: -50%;
 }
 
-#radio4:checked ~ .first {
+#radio4:checked~.first {
     margin-left: -75%;
 }
 
-#radio5:checked ~ .first {
+#radio5:checked~.first {
     margin-left: -100%;
 }
 
@@ -95,30 +96,30 @@
     margin-top: 370px;
     display: flex;
     justify-content: center;
-   
+
 }
 
 .navigation-auto div:not(:last-child) {
     margin-right: 20px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
+#radio1:checked~.navigation-auto .auto-btn1 {
     background-color: black;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2 {
+#radio2:checked~.navigation-auto .auto-btn2 {
     background-color: black;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3 {
+#radio3:checked~.navigation-auto .auto-btn3 {
     background-color: black;
 }
 
-#radio4:checked ~ .navigation-auto .auto-btn4 {
+#radio4:checked~.navigation-auto .auto-btn4 {
     background-color: black;
 }
 
-#radio5:checked ~ .navigation-auto .auto-btn5 {
+#radio5:checked~.navigation-auto .auto-btn5 {
     background-color: black;
 }
 
@@ -128,13 +129,15 @@
     background: red;
     position: relative;
     animation: loading linear infinite;
-  }
-  
-  @keyframes loading {
+}
+
+
+@keyframes loading {
     0% {
-      width: 0;
+        width: 0;
     }
+
     100% {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
