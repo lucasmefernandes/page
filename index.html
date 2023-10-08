@@ -18,33 +18,60 @@
 
 <body>
   <header class="hidden-header">
-    <div class="backgroundImg"></div>
     <div class="header-invisible">
       <nav>
         <div class="box-logo">
-          <a href="#" class="box-logo-link"><img width="175px" src="assets/imgs/logo/logo-header.png"
+          <a href="#" class="box-logo-link"><img width="175px" src="./assets/imgs/logo/logo-header.png"
               alt="logo-empresa" /></a>
         </div>
-        <ul>
+
+        <ul class="topnav" id="myTopnavWeb">
           <li class="topnav-link"><a href="#quemsomos">Quem Somos</a></li>
           <li class="topnav-link"><a href="#produtos">Produtos</a></li>
           <li class="topnav-link"><a href="#faleconosco">Fale Conosco</a></li>
         </ul>
+
+
+        <div class="icon">
+          <a href="javascript:void(0);" id="toggleMenu">&#9776;</a>
+          <ul class="topnavMobile" id="myTopnavMobile">
+            <li class="topnav-link"><a href="#quemsomos">Quem Somos</a></li>
+            <li class="topnav-link"><a href="#produtos">Produtos</a></li>
+            <li class="topnav-link"><a href="#faleconosco">Fale Conosco</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
   <main>
+    <section>
+      <div class="backgroundImg">
+        <h1 class="backText"></h1>
+      </div>
+    </section>
     <section class="sec-01" id="produtos">
       <div class="container-global-sec01">
         <div class="box-title">
-          <h1>Produtos</h1>
+          <h1>Otimize sua Operação com Niveladores e Roletes de Excelência!</h1>
         </div>
         <div class="box-text-products">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Doloribus dolorum possimus minima iure eveniet et vero tenetur
-            delectus laborum assumenda consequatur quos illum, tempore
-            exercitationem necessitatibus illo atque placeat? Facilis.
+          <p class="box-text-products-p">
+            Você está pronto para elevar a eficiência de sua operação? Nossos niveladores de precisão proporcionam
+            estabilidade, enquanto os roletes mantêm o fluxo de trabalho fluindo sem problemas. Com nossos produtos,
+            você pode esperar:
+          </p>
+          <br>
+          <ul class="box-text-products-ul">
+            <li class="box-text-products-li">Aumento da Produtividade: Elimine desníveis e vibrações, tornando sua
+              operação mais produtiva.</li>
+            <li class="box-text-products-li">Maior Qualidade: Produza produtos de alta qualidade com precisão
+              incomparável.</li>
+            <li class="box-text-products-li">Menos Manutenção: Reduza custos de manutenção com nossos niveladores e
+              roletes duráveis.</li>
+          </ul>
+          <br>
+          <p class="box-text-products-p-center">
+            Otimize sua operação hoje. Escolha niveladores e roletes de excelência para o sucesso contínuo.
           </p>
         </div>
         <div class="box-carrossel">
@@ -59,14 +86,6 @@
             </button>
 
             <div class="cards" id="">
-              <!-- <div class="card-item item neon">
-                <img width="250px" src="assets/imgs/rolete/rolete1.jpg" alt="">
-                <h1>Rolete</h1>
-                <p>Auxilia na rolagem de embarcações na carreta; barcos, jet skis, lanchas, entre outros.
-                  Alguns dos roletes também utilizados como batentes frontais. Garante agilidade e
-                  segurança, evitando danos aos veículos náuticos.</p>
-                <button class="button-consult">Consultar</button>
-              </div> -->
             </div>
 
             <button class="button-caroussel arrow-right control">
@@ -76,104 +95,41 @@
             </button>
           </div>
 
-        </div>
-
-
-
-
-
-
-    </section>
-
-    <section class="sec-01" id="produtos">
-      <div class="container-global-sec01">
-        <div class="box-title">
-          <h1>Imagens</h1>
-        </div>
-        <div class="box-text-products">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Doloribus dolorum possimus minima iure eveniet et vero tenetur
-            delectus laborum assumenda consequatur quos illum, tempore
-            exercitationem necessitatibus illo atque placeat? Facilis.
-          </p>
-        </div>
-
-        <div class="box-caroussel">
-          <button class="button-caroussel arrow-left images-control">
-            <span class="material-symbols-outlined left-image">
-              arrow_back
-            </span>
-          </button>
-
-          <div class="cards" id="">
-            <div class="card-item imageItem neon-image">
-              <img width="250px" src="assets/imgs/rolete/rolete1.jpg" alt="" />
-            </div>
-            <div class="card-item imageItem">
-              <img width="250px" src="assets/imgs/rolete/rolete1.jpg" alt="" />
-            </div>
-            <div class="card-item imageItem">
-              <img width="250px" src="assets/imgs/rolete/rolete1.jpg" alt="" />
-            </div>
-            <div class="card-item imageItem">
-              <img width="250px" src="assets/imgs/rolete/rolete1.jpg" alt="" />
-            </div>
-            <div class="card-item imageItem">
-              <img width="250px" src="assets/imgs/rolete/rolete2.jpg" alt="" />
-            </div>
-            <div class="card-item imageItem">
-              <img width="250px" src="assets/imgs/rolete/rolete3.jpg" alt="" />
-            </div>
-            <div class="card-item imageItem">
-              <img width="250px" src="assets/imgs/rolete/rolete3.jpg" alt="" />
-            </div>
+          <div class="mobileButton">
+            <button class="button-caroussel-mobile arrow-left control">
+              <span class="material-symbols-outlined left">
+                arrow_back
+              </span>
+            </button>
+            <button class="button-caroussel-mobile arrow-right control">
+              <span class="material-symbols-outlined right">
+                arrow_forward
+              </span>
+            </button>
           </div>
 
-          <button class="button-caroussel arrow-right images-control">
-            <span class="material-symbols-outlined right-image">
-              arrow_forward
-            </span>
-          </button>
         </div>
+    </section>
+    <section class="sec-divisor">
+      <div class="cropped">
+        <img src="assets/imgs/animation_interstellar_InvertedHex1_mu0zovtfb.gif" alt="">
       </div>
     </section>
 
     <section class="sec-02" id="quemsomos">
-      <div class="cropped">
-        <img src="assets/imgs/animation_interstellar_InvertedHex1_mu0zovtfb.gif" alt="">
-      </div>
-      <div class="container-global-sec02 img-sobre">
-        <div class="box-title">
-          <h1>QUEM SOMOS?</h1>
-        </div>
 
-        <div class="box-text-sobre">
-          <p>
-            Não se engane: todas as empresas não são iguais. O que realmente faz a diferença de uma para outra é a
-            cultura, os valores e a maneira como cada uma trata seus funcionários.
-          </p>
-          <br>
-          <p>Em meio à pandemia, nasceu a Vabadus, uma empresa de vendas apaixonada por entregar produtos versáteis, de
-            alta qualidade e, acima de tudo, duráveis! Localizada em Franca/SP/Brasil, somos uma equipe dedicada que
-            se orgulha em oferecer soluções excepcionais aos nossos clientes.
-          </p>
-          <br>
-          <p> Nossa cultura é profundamente enraizada em princípios éticos e morais. Acreditamos em respeitar nossos
-            clientes e parceiros, seguindo estritamente todas as regras legais e normas do setor.
-          </p>
-          <br>
-          <p>
-            Nossos valores estão centrados principalmente no respeito ao próximo. Valorizamos nossos clientes e
-            parceiros, considerando-os parte essencial do nosso dia a dia. Estamos comprometidos em fornecer um
-            atendimento excepcional, ouvindo atentamente suas necessidades e superando suas expectativas.
-          </p>
-        </div>
-        <br>
-        <div class="box-text-sobre">
-          <p>E quando se trata de nossos funcionários, eles são verdadeiramente os nossos melhores e mais valiosos
-            ativos. Investimos em suas habilidades, promovemos um ambiente de trabalho inclusivo e encorajamos a
-            criatividade e a inovação.</p>
+      <div class="container-global-sec02 img-sobre">
+        <div class="box-quemsomos">
+          <div class="box-title">
+            <h1>QUEM SOMOS?</h1>
+          </div>
+          <div class="box-text-sobre">
+            <p class="typing-text"></p>
+            <p class="typing-text"></p>
+            <p class="typing-text"></p>
+            <p class="typing-text"></p>
+            <p class="typing-text"></p>
+          </div>
         </div>
       </div>
     </section>
@@ -200,18 +156,19 @@
       </div>
     </section>
   </main>
-  <footer style="height: 75px; background-color: #000">
+  <footer class="foot">
     <div class="social">
       <div class="social-links">
-        <a href=""><img src="assets/imgs/instagram.png" alt="" width="25px" /></a>
-        <a href=""><img src="assets/imgs/fbook.png" alt="" width="25px" /></a>
-        <a href=""><img src="assets/imgs/yt.png" alt="" width="25pxx" /></a>
-        <a href=""><img src="assets/imgs/twitter.png" alt="" width="25px" /></a>
-        <a href=""><img src="assets/imgs/mail.png" alt="" width="25px" /></a>
+        <a href="https://www.instagram.com/vabadusweb/"><img src="assets/imgs/instagram.png" alt="" width="25px"
+            target="_blank"></a>
+        <!-- <a href=""><img src="assets/imgs/fbook.png" alt="" width="25px" target="_blank"></a>
+        <a href=""><img src="assets/imgs/yt.png" alt="" width="25pxx" target="_blank"></a>
+        <a href=""><img src="assets/imgs/twitter.png" alt="" width="25px" target="_blank"></a>
+        <a href=""><img src="assets/imgs/mail.png" alt="" width="25px" target="_blank"></a> -->
       </div>
       <p>
-        © 2023, CNPJ: 01.010.010/0001-80 | Rua Sao Paulo. São Paulo - SP CEP:
-        01.010-010 | atendimento@atendimento.com.br
+        © 2023, CNPJ: 37.440.183/0001-76 | Av Chico Julio 2980 - Vila chico júlio - sala 03 - Franca - São Paulo - CEP:
+        14405-252 | atendimento@vabadus.com.br
       </p>
     </div>
   </footer>

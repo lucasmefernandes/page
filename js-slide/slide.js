@@ -1,22 +1,26 @@
-import dadosSliders from "./dados.js";
+import {dadosSliders} from "./dados.js";
 
 const dadosObtidos = dadosSliders;
 
-const contPrincipal = document.querySelector(".slider-main");
 const cards = document.querySelector(".cards");
 
 dadosObtidos.forEach((dadosSlider, index) => {
+
   const slider = document.createElement("div");
   slider.classList.add("slider");
   slider.classList.add("card-item");
   slider.classList.add("item");
   slider.classList.add("neon");
 
-  const manual = document.createElement("div");
-  manual.classList.add("manual-navigation");
+  if(index === 0) {
+    slider.style.display = "block"
+  } else {
+    slider.style.display = "none"
+  }
 
-  const navigation = document.createElement("div");
-  navigation.classList.add("navigation-auto");
+  const title = document.createElement("h2");
+  title.textContent = dadosSlider.nome;
+  title.classList.add("slider-title"); 
 
   const slides = document.createElement("div");
   slides.classList.add("slides");
@@ -26,22 +30,46 @@ dadosObtidos.forEach((dadosSlider, index) => {
   wpp.textContent = "Enviar via WhatsApp";
   wpp.classList.add("button-wpp");
 
-  let selectedImageIndex = 0; // Adicione uma variável para rastrear a imagem selecionada no slider atual
+  wpp.addEventListener("click", () => {
+    const link = dadosSlider.mensagem();
+    const whatsappLink = `https://api.whatsapp.com/send?phone=+551637216351&text=${link}`;
+    
+    window.open(whatsappLink);
+  });
 
+  let selectedImageIndex = 0; // Adicione uma variável para rastrear a imagem selecionada no slider atual
+  let selectedRadio = null;
+
+  const radioDiv = document.createElement("div");
+  
   dadosSlider.imagens.forEach((imagem, i) => {
     const radio = document.createElement("input");
     radio.type = "radio";
     radio.name = `radio-btn-${index}`;
     radio.id = `radio${i + 1}-${index}`;
+    radio.classList.add("manual-btn");
     radio.addEventListener("change", () => {
-      selectedImageIndex = i; // Atualize a variável com o índice da imagem selecionada
-      updateImage(); // Atualize a imagem dentro do slider atual
+      selectedImageIndex = i;
+      updateImage();
     });
 
-    const rotulo = document.createElement("label");
-    rotulo.htmlFor = `radio${i + 1}-${index}`;
-    rotulo.classList.add("manual-btn");
-    manual.appendChild(rotulo);
+    radioDiv.classList.add("radioDiv");
+    radioDiv.appendChild(radio);
+
+    radio.addEventListener("change", () => {
+      selectedImageIndex = i;
+      updateImage();
+      
+      if (selectedRadio) {
+        const prevLabel = document.querySelector(`label[for=${selectedRadio.id}]`);
+        prevLabel.classList.remove("selected");
+      }
+    
+      const label = document.querySelector(`label[for=${radio.id}]`);
+      label.classList.add("selected");
+      
+      selectedRadio = radio;
+    });
 
     const img = document.createElement("img");
     img.src = imagem;
@@ -54,15 +82,11 @@ dadosObtidos.forEach((dadosSlider, index) => {
     const auto = document.createElement("div");
     auto.classList.add(`auto-btn${i}`);
 
-    slides.appendChild(radio);
-    navigation.appendChild(auto);
     slides.appendChild(slide);
+    slides.appendChild(radioDiv);
   });
-
+  slider.appendChild(title); 
   slider.appendChild(slides);
-  slider.appendChild(manual);
-
-  slides.appendChild(navigation);
 
   const carga = document.createElement("div");
   carga.classList.add("load");
@@ -71,6 +95,7 @@ dadosObtidos.forEach((dadosSlider, index) => {
   slider.appendChild(wpp);
   cards.appendChild(slider);
 
+  updateImage();
 
   function updateImage() {
     const images = slider.querySelectorAll(".slide img");
@@ -118,3 +143,6 @@ dadosObtidos.forEach((dadosSlider, index) => {
   }
 
 });
+
+
+
