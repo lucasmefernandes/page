@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateSlider(); 
 
-  setInterval(updateSlider, 4000);
+  setInterval(updateSlider, 10000);
 });
 
 

@@ -69,3 +69,15 @@
         width: 100%;
     }
 }
+
+
+.box-vitrine {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-vitrine .slider {
+    margin: 0.7rem;
+    width: 350px;
+    height: 100%;
+}
