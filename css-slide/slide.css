@@ -71,12 +71,12 @@
 }
 
 
-.box-vitrine {
+.box-vitrine, .search-results {
     display: flex;
     flex-wrap: wrap;
 }
 
-.box-vitrine .slider {
+.box-vitrine .slider, .search-results .slider {
     margin: 0.7rem;
     width: 350px;
     height: 100%;
