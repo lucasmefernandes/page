@@ -14,6 +14,10 @@
     border-radius: 5px;
 }
 
+.box-caroussel .slider  {
+    width: 700px;
+}
+
 .slider .button-wpp {
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
@@ -28,6 +32,10 @@
     background-color: #ffff;
 }
 
+.box-caroussel .slides  {
+    height: 650px;
+}
+
 .slide {
     position: relative;
     transition: 0.6s;
@@ -35,6 +43,10 @@
 
 .slide img {
     width: 366px;
+}
+
+.box-caroussel .slide img  {
+    width: 600px;
 }
 
 .manual-btn {

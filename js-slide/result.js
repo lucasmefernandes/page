@@ -219,6 +219,7 @@ function mostrarProdutos(categoria) {
 const btn = document.getElementById("toggleMenu");
 
 function toggleMenu() {
+  console.log("entrou no toggle")
   var x = document.getElementById("myTopnavMobile");
   if (x.style.display === "flex") {
     x.style.display = "none";
@@ -228,5 +229,8 @@ function toggleMenu() {
 }
 
 btn.addEventListener("click", () => {
+  console.log("clicou")
   toggleMenu();
 });
+
+

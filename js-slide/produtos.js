@@ -217,105 +217,120 @@ export const dadosVitrineSliders = [
         produtos: {
           item1: {
             nome: "Mini 1 - Parafuso 1/4",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores1.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores1.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item2: {
             nome: "Mini 1 - Parafuso 3/16",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores2.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores2.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item3: {
             nome: "Mini 2 - Parafuso 1/4",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores3.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores3.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item4: {
             nome: "Mini 2 - Parafuso 5/16",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores4.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores4.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item5: {
             nome: "Mini 3 - Parafuso 1/4",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores5.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores5.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item6: {
             nome: "Mini 3 - Parafuso 3/8",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores6.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores6.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item7: {
             nome: "Mini 3 - Parafuso 5/16",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores7.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores7.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item8: {
             nome: "Mini 4 - Parafuso 3/8",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores8.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores8.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item9: {
             nome: "Mini 10 - Parafuso 7/16",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores9.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores9.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item10: {
             nome: "Mini 4 - Parafuso 5/16",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores10.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores10.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item11: {
             nome: "Nivelador 0 - Parafuso 1/4",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores11.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores11.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item12: {
             nome: "Nivelador 1 - Parafuso 1/4",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores12.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores12.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item13: {
             nome: "Nivelador 1 - Parafuso 5/16",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores13.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores13.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item14: {
             nome: "Nivelador 2 - Parafuso 3/8",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores14.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores14.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
           },
           item15: {
             nome: "Nivelador 2 - Parafuso 5/16",
-            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores15.jpg",
+            imagem:
+              "./assets/imgs/imgs-slides/roleteVitrine1/mini-niveladores15.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },
@@ -473,6 +488,135 @@ export const dadosVitrineSliders = [
           item10: {
             nome: "Sapata Escada 3- A 61mm-B 22mm-C 22mm",
             imagem: "./assets/imgs/imgs-slides/roleteVitrine1/dome10.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item11: {
+            nome: "Batente de Porta TPM 3",
+            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/dome11.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item12: {
+            nome: "Batente de Porta TPM 4",
+            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/dome12.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item13: {
+            nome: "Batente de Porta TP 1",
+            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/dome12.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item14: {
+            nome: "Batente de Porta TP 2",
+            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/dome13.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item15: {
+            nome: "Batente de Porta TP 3",
+            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/dome14.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item16: {
+            nome: "Batente de Porta TP 4",
+            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/dome15.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item17: {
+            nome: "Batente de Porta TP 5",
+            imagem: "./assets/imgs/imgs-slides/roleteVitrine1/dome16.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+        },
+      },
+      ReparoConstrução: {
+        name: "Reparo e construção",
+        produtos: {
+          item1: {
+            nome: "Calço de borracha G-L",
+            imagem: "./assets/imgs/imgs-slides/calco/calco-01.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item2: {
+            nome: "Calço de borracha G-1",
+            imagem: "./assets/imgs/imgs-slides/calco/calco-02.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item3: {
+            nome: "Calço de borracha G-2",
+            imagem: "./assets/imgs/imgs-slides/calco/calco-03.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item4: {
+            nome: "Calço de borracha P-0",
+            imagem: "./assets/imgs/imgs-slides/calco/calco-04.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item5: {
+            nome: "Calço de borracha P-1",
+            imagem: "./assets/imgs/imgs-slides/calco/calco-05.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item6: {
+            nome: "Calço de borracha P-2",
+            imagem: "./assets/imgs/imgs-slides/calco/calco-06.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item7: {
+            nome: "Calço de borracha P-3",
+            imagem: "./assets/imgs/imgs-slides/calco/calco-07.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+        },
+      },
+      EsportesTrabalho: {
+        name: "Esportes e Trabalho",
+        produtos: {
+          item1: {
+            nome: "Mosquetão trava simples 8x80",
+            imagem: "./assets/imgs/imgs-slides/calco/calco-01.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item2: {
+            nome: "Mosquetão trava simples 9x90",
+            imagem: "./assets/imgs/imgs-slides/calco/calco-02.jpg",
+            mensagem: function () {
+              return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
+            },
+          },
+          item3: {
+            nome: "Mosquetão trava simples 10x100",
+            imagem: "./assets/imgs/imgs-slides/calco/calco-03.jpg",
             mensagem: function () {
               return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
             },

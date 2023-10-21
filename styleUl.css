@@ -1,0 +1,16 @@
+.ul-result {
+    top: 65px !important;
+}
+
+@media (max-width: 964px) {
+    .slider {
+        width: 325px !important;
+        margin: 16px 0 !important;
+    }
+}
+
+
+.search-results {
+    justify-content: center;
+    align-items: center;
+}
