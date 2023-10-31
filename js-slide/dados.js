@@ -46,7 +46,7 @@ export const dadosSliders = [
       "./assets/imgs/imgs-slides/Mini-niveladores5/nivelador4.jpg",
       "./assets/imgs/imgs-slides/Mini-niveladores5/nivelador5.jpg",
     ],
-    nome: "Mini nivelador 4 de 7/16",
+    nome: "Mini nivelador 10 de 7/16",
     mensagem: function () {
       return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
     },
@@ -138,7 +138,7 @@ export const dadosSliders = [
       "./assets/imgs/imgs-slides/roletes7/rolete5.jpg",
       "./assets/imgs/imgs-slides/roletes7/rolete6.jpg",
     ],
-    nome: "Rolete 7",
+    nome: "Rolete 8",
     mensagem: function () {
       return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
     },
@@ -151,7 +151,7 @@ export const dadosSliders = [
       "./assets/imgs/imgs-slides/roletes8/rolete4.jpg",
       "./assets/imgs/imgs-slides/roletes8/rolete5.jpg",
     ],
-    nome: "Rolete 8",
+    nome: "Rolete 9",
     mensagem: function () {
       return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
     },
@@ -165,7 +165,7 @@ export const dadosSliders = [
       "./assets/imgs/imgs-slides/roletes9/rolete5.jpg",
       "./assets/imgs/imgs-slides/roletes9/rolete6.jpg",
     ],
-    nome: "Rolete 9",
+    nome: "Rolete 10",
     mensagem: function () {
       return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
     },
@@ -177,7 +177,7 @@ export const dadosSliders = [
       "./assets/imgs/imgs-slides/roletes10/rolete3.jpg",
       "./assets/imgs/imgs-slides/roletes10/rolete4.jpg",
     ],
-    nome: "Rolete 10",
+    nome: "Rolete Especial",
     mensagem: function () {
       return `Olá, tudo bem? Gostaria de mais informações sobre ${this.nome}`;
     },

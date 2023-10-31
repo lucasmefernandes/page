@@ -3,7 +3,7 @@ import { dadosSlidersMain } from "./js-slide/dados.js";
 document.addEventListener("DOMContentLoaded", function () {
   const controls = document.querySelectorAll(".control");
   let currentItem = 0;
-  const items = document.querySelectorAll(".slider");
+  const items = document.querySelectorAll(".slider-sup");
   const maxItems = items.length;
 
   controls.forEach((control) => {

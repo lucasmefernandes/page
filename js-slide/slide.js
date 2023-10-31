@@ -11,8 +11,9 @@ dadosObtidos.forEach((dadosSlider, index) => {
   slider.classList.add("card-item");
   slider.classList.add("item");
   slider.classList.add("neon");
+  slider.classList.add("slider-sup");
 
-  if(index === 0) {
+  if(index === 0 ) {
     slider.style.display = "block"
   } else {
     slider.style.display = "none"
